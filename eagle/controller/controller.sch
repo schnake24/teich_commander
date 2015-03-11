@@ -11641,6 +11641,118 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="relay">
+<description>&lt;b&gt;Relays&lt;/b&gt;&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eichhoff
+&lt;li&gt;Finder
+&lt;li&gt;Fujitsu
+&lt;li&gt;HAMLIN
+&lt;li&gt;OMRON
+&lt;li&gt;Matsushita
+&lt;li&gt;NAiS
+&lt;li&gt;Siemens
+&lt;li&gt;Schrack
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="REED">
+<description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;
+reed, 1 x norm. open with polarity, grid 5.08</description>
+<wire x1="-20.32" y1="5.08" x2="0" y2="5.08" width="0.254" layer="21"/>
+<wire x1="0" y1="5.08" x2="0" y2="0" width="0.254" layer="21"/>
+<wire x1="0" y1="0" x2="-20.32" y2="0" width="0.254" layer="21"/>
+<wire x1="-20.32" y1="0" x2="-20.32" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-20.32" y1="1.27" x2="-20.32" y2="3.81" width="0.254" layer="21"/>
+<wire x1="-20.32" y1="3.81" x2="-20.32" y2="5.08" width="0.254" layer="21"/>
+<wire x1="-20.32" y1="3.81" x2="-19.05" y2="2.54" width="0.254" layer="21"/>
+<wire x1="-19.05" y1="2.54" x2="-20.32" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-10.795" y1="3.81" x2="-9.525" y2="3.81" width="0.254" layer="21"/>
+<wire x1="-9.525" y1="3.81" x2="-9.525" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-9.525" y1="3.175" x2="-9.525" y2="2.54" width="0.254" layer="21"/>
+<wire x1="-9.525" y1="2.54" x2="-9.525" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-9.525" y1="1.27" x2="-10.795" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-10.795" y1="1.27" x2="-10.795" y2="1.905" width="0.254" layer="21"/>
+<wire x1="-10.795" y1="1.905" x2="-10.795" y2="2.54" width="0.254" layer="21"/>
+<wire x1="-10.795" y1="2.54" x2="-10.795" y2="3.81" width="0.254" layer="21"/>
+<wire x1="-10.795" y1="1.905" x2="-9.525" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-10.795" y1="2.54" x2="-11.43" y2="2.54" width="0.254" layer="21"/>
+<wire x1="-9.525" y1="2.54" x2="-8.89" y2="2.54" width="0.254" layer="21"/>
+<wire x1="-17.78" y1="3.81" x2="-17.78" y2="4.445" width="0.254" layer="21"/>
+<wire x1="-17.78" y1="4.445" x2="-16.51" y2="4.445" width="0.254" layer="21"/>
+<wire x1="-14.605" y1="4.445" x2="-2.54" y2="4.445" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="4.445" x2="-2.54" y2="3.81" width="0.254" layer="21"/>
+<wire x1="-16.51" y1="4.445" x2="-14.605" y2="3.81" width="0.254" layer="21"/>
+<circle x="-11.43" y="1.651" radius="0.127" width="0.254" layer="21"/>
+<pad name="7" x="-2.54" y="2.54" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-7.62" y="2.54" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-12.7" y="2.54" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-17.78" y="2.54" drill="0.8128" shape="long" rot="R90"/>
+<text x="-19.685" y="0.635" size="0.4064" layer="48">Günther 3570.1331..</text>
+<text x="-19.685" y="5.715" size="1.27" layer="25">&gt;NAME</text>
+<text x="-12.7" y="5.715" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="S">
+<wire x1="0" y1="3.175" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<circle x="0" y="-1.905" radius="0.127" width="0.4064" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="95" rot="R90">&gt;PART</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+<symbol name="K+-">
+<wire x1="-3.81" y1="-1.905" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="1.905" width="0.254" layer="94"/>
+<wire x1="3.81" y1="1.905" x2="1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.905" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.905" x2="3.81" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.905" x2="-3.81" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="1.905" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="2.667" x2="-0.508" y2="2.667" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="2.921" x2="-0.762" y2="2.413" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-2.667" x2="-0.508" y2="-2.667" width="0.1524" layer="94"/>
+<text x="1.27" y="2.921" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.27" y="5.08" size="1.778" layer="95">&gt;PART</text>
+<pin name="-" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="+" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="REED" prefix="K">
+<description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;
+reed, 1 x norm. open with polarity, grid 5.08</description>
+<gates>
+<gate name="2" symbol="S" x="5.08" y="0" addlevel="always"/>
+<gate name="1" symbol="K+-" x="-12.7" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="REED">
+<connects>
+<connect gate="1" pin="+" pad="3"/>
+<connect gate="1" pin="-" pad="5"/>
+<connect gate="2" pin="P" pad="1"/>
+<connect gate="2" pin="S" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11659,6 +11771,9 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="C1" library="resistor" deviceset="C-EU" device="025-025X050" value="100n"/>
 <part name="C2" library="resistor" deviceset="CPOL-EU" device="E2.5-7" value="10u"/>
 <part name="C3" library="resistor" deviceset="CPOL-EU" device="E2.5-7" value="10u"/>
+<part name="K1" library="relay" deviceset="REED" device=""/>
+<part name="K2" library="relay" deviceset="REED" device=""/>
+<part name="K3" library="relay" deviceset="REED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11673,6 +11788,12 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="C1" gate="G$1" x="-12.7" y="38.1"/>
 <instance part="C2" gate="G$1" x="-27.94" y="68.58"/>
 <instance part="C3" gate="G$1" x="-55.88" y="68.58"/>
+<instance part="K1" gate="2" x="208.28" y="-5.08"/>
+<instance part="K1" gate="1" x="190.5" y="-5.08"/>
+<instance part="K2" gate="2" x="205.74" y="33.02"/>
+<instance part="K2" gate="1" x="187.96" y="33.02"/>
+<instance part="K3" gate="2" x="205.74" y="78.74"/>
+<instance part="K3" gate="1" x="187.96" y="78.74"/>
 </instances>
 <busses>
 </busses>

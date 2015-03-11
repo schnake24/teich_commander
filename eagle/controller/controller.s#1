@@ -11668,7 +11668,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="IC1" gate="1" x="43.18" y="53.34"/>
 <instance part="IC2" gate="G$1" x="-43.18" y="81.28"/>
 <instance part="P+1" gate="1" x="-66.04" y="93.98"/>
-<instance part="GND1" gate="1" x="-48.26" y="12.7"/>
+<instance part="GND1" gate="1" x="-68.58" y="15.24"/>
 <instance part="R1" gate="G$1" x="2.54" y="81.28"/>
 <instance part="C1" gate="G$1" x="-12.7" y="38.1"/>
 <instance part="C2" gate="G$1" x="-27.94" y="68.58"/>
@@ -11693,8 +11693,8 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="IC1" gate="1" pin="GND@1"/>
-<wire x1="-48.26" y1="15.24" x2="-48.26" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="25.4" x2="-43.18" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="17.78" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="25.4" x2="-43.18" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <wire x1="-43.18" y1="25.4" x2="-12.7" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="25.4" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
