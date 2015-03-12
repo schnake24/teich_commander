@@ -12071,6 +12071,7 @@ ULN and UDN Series&lt;p&gt;
 <wire x1="266.7" y1="43.18" x2="266.7" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="45.72" x2="223.52" y2="45.72" width="0.1524" layer="91"/>
 <junction x="223.52" y="45.72"/>
+<junction x="104.14" y="-7.62"/>
 </segment>
 </net>
 <net name="N$2" class="0">
