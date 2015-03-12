@@ -12061,9 +12061,10 @@ ULN and UDN Series&lt;p&gt;
 <wire x1="279.4" y1="-22.86" x2="279.4" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="279.4" y="-30.48"/>
 <junction x="287.02" y="-30.48"/>
-<wire x1="223.52" y1="-30.48" x2="223.52" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-30.48" x2="223.52" y2="20.32" width="0.1524" layer="91"/>
 <junction x="223.52" y="-30.48"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="223.52" y1="20.32" x2="223.52" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="45.72" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="68.58" x2="266.7" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
@@ -12072,6 +12073,10 @@ ULN and UDN Series&lt;p&gt;
 <wire x1="266.7" y1="45.72" x2="223.52" y2="45.72" width="0.1524" layer="91"/>
 <junction x="223.52" y="45.72"/>
 <junction x="104.14" y="-7.62"/>
+<pinref part="Q3" gate="G$1" pin="E"/>
+<wire x1="266.7" y1="17.78" x2="266.7" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="20.32" x2="223.52" y2="20.32" width="0.1524" layer="91"/>
+<junction x="223.52" y="20.32"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12321,17 +12326,12 @@ ULN and UDN Series&lt;p&gt;
 <pinref part="Q3" gate="G$1" pin="C"/>
 <wire x1="266.7" y1="5.08" x2="266.7" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="254" y1="5.08" x2="228.6" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="5.08" x2="228.6" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="20.32" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="5.08" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="81.28" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="81.28" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="PD2(INT0/PCINT18)"/>
 <wire x1="160.02" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
 <junction x="254" y="5.08"/>
-<pinref part="Q3" gate="G$1" pin="E"/>
-<wire x1="266.7" y1="17.78" x2="266.7" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="20.32" x2="228.6" y2="20.32" width="0.1524" layer="91"/>
-<junction x="228.6" y="20.32"/>
 </segment>
 </net>
 </nets>
