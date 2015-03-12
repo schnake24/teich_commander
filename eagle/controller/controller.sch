@@ -11939,6 +11939,142 @@ ULN and UDN Series&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="con-molex">
+<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="43160-XX02">
+<description>&lt;b&gt;SDA-43160 Connector&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/431601306_sd.pdf</description>
+<wire x1="-10.445" y1="-1.325" x2="10.445" y2="-1.325" width="0.2032" layer="21"/>
+<wire x1="-10.445" y1="-15.885" x2="-10.445" y2="-1.325" width="0.2032" layer="21"/>
+<wire x1="-10.445" y1="-15.885" x2="10.445" y2="-15.885" width="0.2032" layer="21"/>
+<wire x1="10.445" y1="-1.325" x2="10.445" y2="-15.885" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-15.8" x2="-1.4" y2="-12.325" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-12.325" x2="1.4" y2="-12.325" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-12.325" x2="1.4" y2="-15.85" width="0.2032" layer="21"/>
+<wire x1="-3.745" y1="3.745" x2="-3.745" y2="-1.1" width="0.6" layer="51"/>
+<wire x1="3.745" y1="3.745" x2="3.745" y2="-1.1" width="0.6" layer="51"/>
+<pad name="1@1" x="-3.745" y="0" drill="1.8" diameter="3"/>
+<pad name="2@1" x="3.745" y="0" drill="1.8" diameter="3"/>
+<pad name="1@2" x="-3.745" y="3.18" drill="1.8" diameter="3"/>
+<pad name="2@2" x="3.745" y="3.18" drill="1.8" diameter="3"/>
+<pad name="M1" x="-8.495" y="-13.13" drill="3" diameter="3.4"/>
+<pad name="M2" x="8.495" y="-13.13" drill="3" diameter="3.4"/>
+<text x="-7.39" y="-17.605" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.49" y="-7.49" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MV2">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S@2" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S@1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M2">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S@2" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S@1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="43160-*02" prefix="X">
+<description>&lt;b&gt;SDA-43160 Connector&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/431601306_sd.pdf</description>
+<gates>
+<gate name="-1" symbol="MV2" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M2" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="43160-XX02">
+<connects>
+<connect gate="-1" pin="S@1" pad="1@1"/>
+<connect gate="-1" pin="S@2" pad="1@2"/>
+<connect gate="-2" pin="S@1" pad="2@1"/>
+<connect gate="-2" pin="S@2" pad="2@2"/>
+</connects>
+<technologies>
+<technology name="11">
+<attribute name="MF" value="WALDOM/MOLEX" constant="no"/>
+<attribute name="MPN" value="43160-1102" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="54H0255" constant="no"/>
+</technology>
+<technology name="12">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+<technology name="13">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="43160-1302" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="92M1480" constant="no"/>
+</technology>
+<technology name="14">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+<technology name="31">
+<attribute name="MF" value="WALDOM/MOLEX" constant="no"/>
+<attribute name="MPN" value="43160-3102" constant="no"/>
+<attribute name="OC_FARNELL" value="3293038" constant="no"/>
+<attribute name="OC_NEWARK" value="54H0264" constant="no"/>
+</technology>
+<technology name="32">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+<technology name="51">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="43160-5102" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="92M1493" constant="no"/>
+</technology>
+<technology name="52">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+<technology name="53">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="43160-5302" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="92M1498" constant="no"/>
+</technology>
+<technology name="54">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+<technology name="73">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="43160-7302" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="92M1507" constant="no"/>
+</technology>
+<technology name="74">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11973,6 +12109,9 @@ ULN and UDN Series&lt;p&gt;
 <part name="R8" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
 <part name="R10" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="X1" library="con-molex" deviceset="43160-*02" device="" technology="11"/>
+<part name="X2" library="con-molex" deviceset="43160-*02" device="" technology="11"/>
+<part name="X3" library="con-molex" deviceset="43160-*02" device="" technology="11"/>
 </parts>
 <sheets>
 <sheet>
@@ -12006,6 +12145,12 @@ ULN and UDN Series&lt;p&gt;
 <instance part="R8" gate="G$1" x="248.92" y="38.1" rot="R90"/>
 <instance part="R9" gate="G$1" x="243.84" y="63.5" rot="R270"/>
 <instance part="R10" gate="G$1" x="254" y="12.7" rot="R90"/>
+<instance part="X1" gate="-1" x="353.06" y="55.88"/>
+<instance part="X1" gate="-2" x="353.06" y="53.34"/>
+<instance part="X2" gate="-1" x="353.06" y="30.48"/>
+<instance part="X2" gate="-2" x="353.06" y="27.94"/>
+<instance part="X3" gate="-1" x="353.06" y="7.62"/>
+<instance part="X3" gate="-2" x="353.06" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -12147,21 +12292,27 @@ ULN and UDN Series&lt;p&gt;
 <segment>
 <pinref part="K3" gate="2" pin="P"/>
 <wire x1="205.74" y1="53.34" x2="205.74" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="48.26" x2="330.2" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="48.26" x2="347.98" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-2" pin="S@1"/>
+<wire x1="347.98" y1="48.26" x2="347.98" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="K2" gate="2" pin="P"/>
 <wire x1="205.74" y1="30.48" x2="205.74" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="25.4" x2="330.2" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="25.4" x2="347.98" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-2" pin="S@1"/>
+<wire x1="347.98" y1="25.4" x2="347.98" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="K1" gate="2" pin="P"/>
 <wire x1="205.74" y1="7.62" x2="205.74" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="2.54" x2="330.2" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="2.54" x2="347.98" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="S@1"/>
+<wire x1="347.98" y1="2.54" x2="347.98" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -12200,19 +12351,25 @@ ULN and UDN Series&lt;p&gt;
 <net name="N$15" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="60.96" x2="330.2" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="60.96" x2="347.98" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="S@1"/>
+<wire x1="347.98" y1="60.96" x2="347.98" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="35.56" x2="330.2" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="35.56" x2="347.98" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-1" pin="S@1"/>
+<wire x1="347.98" y1="35.56" x2="347.98" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="10.16" x2="330.2" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="10.16" x2="347.98" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-1" pin="S@1"/>
+<wire x1="347.98" y1="10.16" x2="347.98" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
