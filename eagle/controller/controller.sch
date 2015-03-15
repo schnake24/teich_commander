@@ -14527,13 +14527,12 @@ Source: www.kingbright.com</description>
 <wire x1="38.1" y1="127" x2="27.94" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="1" pin="PC6(/RESET/PCINT14)"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
-<junction x="12.7" y="81.28"/>
+<wire x1="10.16" y1="81.28" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="81.28" x2="10.16" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="104.14" x2="10.16" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="104.14" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
 <junction x="10.16" y="81.28"/>
 </segment>
 </net>
