@@ -14395,15 +14395,6 @@ Source: www.kingbright.com</description>
 <wire x1="381" y1="10.16" x2="396.24" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="7.62" x2="381" y2="7.62" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<wire x1="350.52" y1="5.08" x2="378.46" y2="5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="B3" gate="G$1" pin="1"/>
-<wire x1="353.06" y1="5.08" x2="396.24" y2="5.08" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$28" class="0">
 <segment>
@@ -14483,6 +14474,7 @@ Source: www.kingbright.com</description>
 <wire x1="66.04" y1="129.54" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="G$1" pin="10"/>
 <wire x1="53.34" y1="121.92" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
+<junction x="53.34" y="129.54"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="2"/>
@@ -14706,14 +14698,15 @@ Source: www.kingbright.com</description>
 <wire x1="226.06" y1="78.74" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="261.62" y1="-27.94" x2="261.62" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="261.62" y="-27.94"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="X6" gate="-1" pin="S@2"/>
-<wire x1="350.52" y1="-22.86" x2="342.9" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="-22.86" x2="342.9" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="-20.32" x2="320.04" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="X6" gate="-1" pin="S@1"/>
+<wire x1="347.98" y1="-22.86" x2="342.9" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -14750,6 +14743,12 @@ Source: www.kingbright.com</description>
 <wire x1="302.26" y1="144.78" x2="292.1" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="K2" gate="1" pin="4"/>
 <wire x1="292.1" y1="144.78" x2="292.1" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="B3" gate="G$1" pin="1"/>
+<wire x1="396.24" y1="5.08" x2="353.06" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
