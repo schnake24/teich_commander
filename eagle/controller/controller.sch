@@ -14081,7 +14081,6 @@ Source: www.kingbright.com</description>
 <attribute name="TYPE" value="5T"/>
 </part>
 <part name="X4" library="con-berg" deviceset="PN87520" device=""/>
-<part name="X5" library="con-molex" deviceset="C-GRID-02" device="-15-19"/>
 <part name="POWER230V" library="con-molex" deviceset="C-GRID-02" device="-15-19"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="025-030X050" value="100n"/>
 <part name="SV1" library="con-lstb" deviceset="MA05-2" device=""/>
@@ -14091,14 +14090,10 @@ Source: www.kingbright.com</description>
 <attribute name="FUNKTION" value="Wassersensor"/>
 </part>
 <part name="X6" library="con-molex" deviceset="43160-*02" device="" technology="11"/>
-<part name="R12" library="resistor" deviceset="R-EU_" device="0204/7" value="1M"/>
 <part name="R13" library="resistor" deviceset="R-EU_" device="0204/7" value="1M"/>
 <part name="Q4" library="transistor-npn" deviceset="BC517*" device=""/>
 <part name="R14" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
 <part name="R15" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
-<part name="K1" library="e-schuetze-relais" deviceset="HILFSSCHUETZ_13-14" device="">
-<attribute name="TYPE" value="JS 05 MN KT"/>
-</part>
 <part name="K2" library="e-schuetze-relais" deviceset="HILFSSCHUETZ_13-14" device="">
 <attribute name="TYPE" value="JS 05 MN KT"/>
 </part>
@@ -14150,10 +14145,8 @@ Source: www.kingbright.com</description>
 <instance part="B3" gate="G$1" x="401.32" y="7.62" rot="R90"/>
 <instance part="F1" gate="G$1" x="292.1" y="121.92"/>
 <instance part="X4" gate="G$1" x="-86.36" y="50.8" rot="MR0"/>
-<instance part="X5" gate="-2" x="307.34" y="106.68"/>
-<instance part="X5" gate="-1" x="307.34" y="109.22"/>
-<instance part="POWER230V" gate="-2" x="307.34" y="106.68"/>
-<instance part="POWER230V" gate="-1" x="307.34" y="109.22"/>
+<instance part="POWER230V" gate="-2" x="309.88" y="106.68"/>
+<instance part="POWER230V" gate="-1" x="309.88" y="109.22"/>
 <instance part="C2" gate="G$1" x="-40.64" y="55.88"/>
 <instance part="SV1" gate="G$1" x="45.72" y="127" rot="R180"/>
 <instance part="LED1" gate="G$1" x="2.54" y="116.84" rot="R90"/>
@@ -14161,15 +14154,10 @@ Source: www.kingbright.com</description>
 <instance part="B4" gate="G$1" x="401.32" y="-25.4" rot="R90"/>
 <instance part="X6" gate="-1" x="353.06" y="-22.86"/>
 <instance part="X6" gate="-2" x="353.06" y="-25.4"/>
-<instance part="R12" gate="G$1" x="312.42" y="10.16"/>
 <instance part="R13" gate="G$1" x="317.5" y="-20.32"/>
 <instance part="Q4" gate="G$1" x="274.32" y="-20.32" rot="R180"/>
 <instance part="R14" gate="G$1" x="261.62" y="-17.78" rot="R90"/>
 <instance part="R15" gate="G$1" x="302.26" y="-40.64" rot="R90"/>
-<instance part="K1" gate="G$1" x="281.94" y="99.06">
-<attribute name="FUNKTION" x="281.94" y="99.06" size="1.778" layer="96" display="off"/>
-<attribute name="TYPE" x="281.94" y="99.06" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="K2" gate="G$1" x="279.4" y="154.94"/>
 <instance part="K2" gate="1" x="292.1" y="154.94"/>
 <instance part="F2" gate="G$1" x="292.1" y="177.8"/>
@@ -14247,7 +14235,6 @@ Source: www.kingbright.com</description>
 <wire x1="279.4" y1="10.16" x2="307.34" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="-35.56" x2="279.4" y2="10.16" width="0.1524" layer="91"/>
 <junction x="279.4" y="10.16"/>
-<pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -14293,8 +14280,8 @@ Source: www.kingbright.com</description>
 <pinref part="X3" gate="-1" pin="S@1"/>
 <wire x1="347.98" y1="10.16" x2="347.98" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="347.98" y1="10.16" x2="317.5" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="10.16" x2="317.5" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -14350,11 +14337,8 @@ Source: www.kingbright.com</description>
 <pinref part="IC4" gate="G$1" pin="O4"/>
 <wire x1="144.78" y1="5.08" x2="152.4" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="5.08" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="K6" gate="G$1" pin="A2"/>
 <wire x1="152.4" y1="88.9" x2="281.94" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="88.9" x2="281.94" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="A2"/>
-<junction x="281.94" y="93.98"/>
+<wire x1="281.94" y1="88.9" x2="281.94" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -14488,20 +14472,18 @@ Source: www.kingbright.com</description>
 <wire x1="292.1" y1="93.98" x2="292.1" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="88.9" x2="302.26" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="88.9" x2="302.26" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="X5" gate="-2" pin="S"/>
 <pinref part="POWER230V" gate="-2" pin="S"/>
-<wire x1="302.26" y1="106.68" x2="304.8" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="106.68" x2="307.34" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="X5" gate="-1" pin="S"/>
 <pinref part="POWER230V" gate="-1" pin="S"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="292.1" y1="127" x2="292.1" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="129.54" x2="302.26" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="129.54" x2="302.26" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="109.22" x2="302.26" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="109.22" x2="302.26" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -14510,12 +14492,11 @@ Source: www.kingbright.com</description>
 <wire x1="38.1" y1="132.08" x2="27.94" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="1" pin="PB3(MOSI/OC2A/PCINT3)"/>
-<wire x1="86.36" y1="27.94" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="27.94" x2="96.52" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="I4"/>
 <wire x1="96.52" y1="5.08" x2="119.38" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="1" pin="PB3(MOSI/OC2A/PCINT3)"/>
+<wire x1="73.66" y1="27.94" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="27.94" x2="96.52" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -14634,8 +14615,6 @@ Source: www.kingbright.com</description>
 <junction x="261.62" y="96.52"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="96.52" x2="261.62" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="A1"/>
-<junction x="281.94" y="104.14"/>
 <pinref part="K2" gate="G$1" pin="A1"/>
 <wire x1="279.4" y1="160.02" x2="279.4" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="165.1" x2="261.62" y2="165.1" width="0.1524" layer="91"/>
